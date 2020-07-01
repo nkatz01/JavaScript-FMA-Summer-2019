@@ -1,0 +1,88 @@
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+}
+
+
+#pageheading{
+	font-style: italic;
+}
+
+#controls, p {
+	width:60%;
+	padding: 1em;
+}
+
+input{
+	margin-bottom: 0.5em;
+}
+#sub{
+	width: 40%;
+}
+
+p {
+	border-width: 1px  ;
+	border-style: solid;
+}
+
+#lastdiv{
+	float: right;
+	 width: 100%;
+}
+
+#messageInvis{
+	 display: none;
+ }
+
+div label.radiolabel {
+	font-size: 0.75em;
+	margin-left: 2em;
+}
+
+#low, #medium, #high   {
+	display: none;
+}
+
+#lowVis, #mediumVis, #highVis  {
+	display: inline;
+}
+
+.errorVis{
+	display: inline;
+	color: red; 
+	padding-left: 1em;
+}
+
+.error{
+	display: none;
+	color: red; 
+	padding-left: 1em;
+}
+
+ 
+.questionmark { 
+	background:url(questionmark.jpg) top left no-repeat;
+	padding: 2em;
+}
+
+.tooltip {
+	position: absolute;
+	top: 177px; 
+	display:none;
+	width:125px;
+	border:1px solid #ffffff;
+	background-color:#eeeeee;
+	color: #ffffff;
+	padding: 10px 10px 20px 30px;
+	background:url(tooltipbg.gif)  	 no-repeat;
+	font:0.65em Arial, Helvetica, sans-serif;
+}
+
+#ttip{
+	display: none; 
+}
+
+#ttipVis{
+	display: inline; 
+}
+

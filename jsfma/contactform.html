@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Contact Form</title>
+	<link rel="stylesheet" type="text/css" href="diabetestool.css">
+	<script src="contactform.js"></script>
+</head>
+
+<body>
+	<h1 id="pageheading">Contact Form</h1>
+	<form action="process.php" method="post" id="frm1">
+		<fieldset id="controls">
+			<div>
+				<label for="name">First Name</label>
+				<input id="name" name="name" type="text"><span class="error">* Please Enter a First Name</span>
+			</div>
+			<div>
+			   <label for="lastname">Last Name: </label>
+			   <input type="text" id="lastname"><span class="error">* Please Enter a Last Name</span>
+			</div>
+			<div>
+			<label   for="title">Title</label>
+			  <select id="title">
+				<option value="Mr">Mr</option>
+				<option value="Ms">Ms</option>
+				<option value="Mrs">Mrs</option>
+				<option value="Miss">Miss</option>
+				<option value="Master">Master</option>
+			 </select><span class="error">* Please Enter a valid Title</span>
+			</div>
+			<div>
+				
+				<div class="questionmark" id="qmark">
+					<div class="tooltip" id="ttip">If you do not know your ZHA number, please contact your GP</div>
+				</div>
+					<label for="ZHAN">Health Authority Number</label>
+					<input type="text" id="ZHAN"><span class="error">* Please Enter a valid Health Authority Number</span>			
+			</div>
+			<div >
+				<label for="email">Email: </label>
+				<input type="text" id="email"  size="40"><span class="error">* Please enter a valid email address</span>
+			</div>
+			<div  >
+				<label for="tell">Tel: </label>
+				<input type="text" id="tell"  size="40"><span class="error">* Please enter a valid telephone number</span>
+			</div>
+			<div id="sub">
+				<button type="submit">Submit Form</button>
+			</div>
+		</fieldset>
+   </form>
+  </body>
+</html>

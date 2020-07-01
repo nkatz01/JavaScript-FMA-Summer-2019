@@ -1,0 +1,76 @@
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+}
+
+.sectionheading {
+	color: #ff0000;
+}
+
+#pageheading{
+	font-style: italic; 
+}
+
+#controls {
+	width:70%;
+	padding: 1em;
+}
+
+input{
+	margin-bottom: 0.5em;
+}
+
+div label.formlabel {
+	text-align:right;
+	width: 35%;
+	float: left;
+	font-size: 0.75em;
+	font-weight: bold;
+	margin-bottom:0.5em;
+}
+
+div label.radiolabel {
+	font-size: 0.75em;
+	margin-left: 2em;
+}
+
+
+.errorVis{
+	display: inline;
+	color: red; 
+	padding-left: 1em;
+}
+
+.error{
+	display: none;
+	color: red; 
+	padding-left: 1em;
+}
+
+ 
+.questionmark { 
+	background:url(questionmark.jpg) top left no-repeat;
+	padding: 2em;
+}
+
+.tooltip {
+	position: absolute;
+	top: 177px; 
+	display:none;
+	width:125px;
+	border:1px solid #ffffff;
+	background-color:#eeeeee;
+	color: #ffffff;
+	padding: 10px 10px 20px 30px;
+	background:url(tooltipbg.gif)  	 no-repeat;
+	font:0.65em Arial, Helvetica, sans-serif;
+}
+
+#ttip{
+	display: none; 
+}
+
+#ttipVis{
+	display: inline; 
+}
+  

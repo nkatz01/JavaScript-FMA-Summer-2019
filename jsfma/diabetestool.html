@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Diabetes Risk Assessment Tool</title>
+	<link rel="stylesheet" type="text/css" href="diabetestool.css">
+	<script src="diabetestool.js"></script>
+</head>
+
+<body>
+	<h1 id="pageheading"> Diabetes Risk Assessment Tool</h1>
+	<form id="drat">
+		<fieldset id="controls">
+			<div class="question">
+				<label class="formlabel">How old are you?</label>
+	  <label class="radiolabel" for="ageFirst">11-25</label>
+	  <input type="radio" name="age" id="ageFirst" value="0" >
+	  <label class="radiolabel" for="ageSecond">26-40</label>
+	  <input type="radio" name="age" id="ageSecond" value="5">
+	  <label class="radiolabel" for="ageThird">41-60</label>
+	  <input type="radio" name="age" id="ageThird" value="8">
+	  <label class="radiolabel" for="ageForth">60+</label>
+	  <input type="radio" name="age" id="ageForth" value="10">
+	</div>
+	 <div class="question">
+	  <label class="formlabel">What is your BMI?</label>
+	  <label class="radiolabel" for="bmiFirst">0-25</label>
+	  <input type="radio" name="BMI" id="bmiFirst" value="0" >
+	  <label class="radiolabel" for="bmiSecond">26-30</label>
+	  <input type="radio" name="BMI" id="bmiSecond" value="0">
+	  <label class="radiolabel" for="bmiThird">31-35</label>
+	  <input type="radio" name="BMI" id="bmiThird" value="9">
+	  <label class="radiolabel" for="bmiForth">35+</label>
+	  <input type="radio" name="BMI" id="bmiForth" value="10">
+	</div>
+	 <div class="question">
+	  <label class="formlabel">Does anybody in your family have diabetes?</label>
+	  <label class="radiolabel" for="diabFirst">No.</label>
+	  <input type="radio" name="genes" id="diabFirst" value="0" >
+	  <label class="radiolabel" for="diabSecond">Grandparent</label>
+	  <input type="radio" name="genes" id="diabSecond" value="7">
+	  <label class="radiolabel" for="diabThird">Sibling</label>
+	  <input type="radio" name="genes" id="diabThird" value="15">
+	  <label class="radiolabel" for="diabForth">Parent</label>
+	  <input type="radio" name="genes" id="diabForth" value="15">
+	</div>
+	 <div id="lastdiv" class="question">
+	  <label class="formlabel">How would you describe your diet?</label>
+	  <label class="radiolabel" for="dietFirst">Low sugar</label>
+	  <input type="radio" name="diet" id="dietFirst" value="0" >
+	  <label class="radiolabel" for="dietSecond">Normal sugar</label>
+	  <input type="radio" name="diet" id="dietSecond" value="0">
+	  <label class="radiolabel" for="dietThird">Quite high sugar?</label>
+	  <input type="radio" name="diet" id="dietThird" value="7">
+	  <label class="radiolabel" for="dietForth">High sugar</label>
+	  <input type="radio" name="diet" id="dietForth" value="10">
+	</div>
+
+	<div id="sub">
+	  <button type="submit">Calculate</button>
+	 </div>
+	 </fieldset>
+   </form>
+
+   <div>
+	<p id="message">Your results show that you currently have a <span id="risklevel"></span> risk of developing diabetes.<span id="low"> However, it is important that you maintain a healthy lifestyle in terms of diet and exercise.</span>
+	<span id="medium"> For more information on your riskfactors, and what to do about them, please visit our diabetesadvice website at <a href="#">http://www.zha.org.zd.</a></span>
+	<span id="high"><span id="highRisk"></span> We advise that you contact the Health Authority todiscuss your risk factors as soon as you can. Please fill in our <a href="contactform.html">contact form</a> and a member of the Health Authority DiabetesTeam will be in contact with you.</span>
+	</p>
+	</div>
+</body>
+
+</html>
